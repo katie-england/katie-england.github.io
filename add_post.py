@@ -310,14 +310,14 @@ def main():
     print(f"Inserting into {INDEX_FILE}...")
     insert_post(card)
 
-    print(f"\nDone! Post added: '{title}'")
-    print("Next steps:")
+    print(f"\n\n\nDone! Post added: '{title}'")
+    print("\nNext steps:")
     print("  1. Open index.html in a browser to preview")
     print("  2. If it looks good, push to GitHub:")
-    print(f"     cd {REPO_DIR}")
     print(f"     git add index.html")
-    print(f'     git commit -m "Add post: {title}"')
-    print(f"     git push")
+    print(f"     (or git add .)")
+    print(f'     git commit -m "Added post: {title}"')
+    print(f"     git push origin main")
 
 
 if __name__ == "__main__":
